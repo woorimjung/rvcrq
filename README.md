@@ -10,4 +10,7 @@ Our
  : Main ADMM algorithm solving optimization problem.
 
 - [upd_D.m](https://github.com/woorimjung/rvcrq/edit/main/upd_D.m)
- :This function performs the embedded ADMM algorithm to compute the coefficient matrix for principal component functions, serving as a critical component within the iterative update process of the main ADMM algorithm.
+ :Embedded ADMM algorithm estimating the coefficient matrix for principal component functions.
+
+- [BICforRVC.m](https://github.com/woorimjung/rvcrq/edit/main/BICforRVC.m)
+ :
