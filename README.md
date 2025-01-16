@@ -11,7 +11,7 @@ Our
  : Main ADMM algorithm solving optimization problem.
 
 - [upd_D.m](https://github.com/woorimjung/rvcrq/edit/main/upd_D.m)
- : Embedded ADMM algorithm estimating the coefficient matrix for principal component functions.
+ : Embedded ADMM algorithm estimating the coefficient matrix for principal component functions (Used for main ADMM).
 
 - [BICforRVC.m](https://github.com/woorimjung/rvcrq/edit/main/BICforRVC.m)
  : Code to calculate the BIC of the proposed method.
