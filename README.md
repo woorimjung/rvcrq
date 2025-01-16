@@ -33,3 +33,5 @@ Department of Statistics, Sungkyunkwan University
 
 [**Seyoung Park**](https://sites.google.com/view/seyoungpark/home)
 Department of Applied Statistics, Yonsei University
+
+* Please contact at [c7012evol@g.skku.edu] for any inquiries regarding the code.
