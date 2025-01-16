@@ -1,4 +1,5 @@
 # Reduced varying coefficients of regional quantile for multiple responses (2025+)
+
 ## Overview
 Our 
 
@@ -10,13 +11,17 @@ Our
  : Main ADMM algorithm solving optimization problem.
 
 - [upd_D.m](https://github.com/woorimjung/rvcrq/edit/main/upd_D.m)
- :Embedded ADMM algorithm estimating the coefficient matrix for principal component functions.
+ : Embedded ADMM algorithm estimating the coefficient matrix for principal component functions.
 
 - [BICforRVC.m](https://github.com/woorimjung/rvcrq/edit/main/BICforRVC.m)
- :
+ : 
 
 - [MVC.m](https://github.com/woorimjung/rvcrq/edit/main/MVC.m)
- :
+ : 
 
 - [BICforKNN.m](https://github.com/woorimjung/rvcrq/edit/main/BICforKNN.m)
- :
+ : 
+
+## Note
+
+## Authors
