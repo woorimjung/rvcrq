@@ -34,4 +34,9 @@ Department of Statistics, Sungkyunkwan University
 [**Seyoung Park**](https://sites.google.com/view/seyoungpark/home)
 Department of Applied Statistics, Yonsei University
 
+[**Hyokyoung (Grace) Hong**](https://dceg.cancer.gov/about/staff-directory/hong-grace)
+ 
+ Division of Cancer Epidemiology & Genetics, National Cancer Institute, NIH
+
+
 * Please contact at [c7012evol@g.skku.edu] for any inquiries regarding the code.
