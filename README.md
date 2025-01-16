@@ -25,7 +25,7 @@ Our
 ## Note
 
 ## Authors
-[**Woorim Jung**]
+Woorim Jung
 M.S. Graduate, Department of Statistics, Sungkyunkwan University 
   
 [**Eun Ryung Lee**](https://sites.google.com/view/eunryunglee/home)
