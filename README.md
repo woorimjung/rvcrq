@@ -14,3 +14,9 @@ Our
 
 - [BICforRVC.m](https://github.com/woorimjung/rvcrq/edit/main/BICforRVC.m)
  :
+
+- [MVC.m](https://github.com/woorimjung/rvcrq/edit/main/MVC.m)
+ :
+
+- [BICforKNN.m](https://github.com/woorimjung/rvcrq/edit/main/BICforKNN.m)
+ :
