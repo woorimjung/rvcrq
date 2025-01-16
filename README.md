@@ -25,3 +25,11 @@ Our
 ## Note
 
 ## Authors
+[**Woorim Jung**]
+M.S. Graduate, Department of Statistics, Sungkyunkwan University 
+  
+[**Eun Ryung Lee**](https://sites.google.com/view/eunryunglee/home)
+Department of Statistics, Sungkyunkwan University 
+
+[**Seyoung Park**](https://sites.google.com/view/seyoungpark/home)
+Department of Applied Statistics, Yonsei University
