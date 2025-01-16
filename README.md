@@ -11,19 +11,19 @@ Our
  : Main ADMM algorithm solving optimization problem.
 
 - [upd_D.m](https://github.com/woorimjung/rvcrq/edit/main/upd_D.m)
- : Embedded ADMM algorithm estimating the coefficient matrix for principal component functions (Used for main ADMM).
+ : Embedded ADMM algorithm estimating the coefficient matrix for principal component functions.
 
 - [BICforRVC.m](https://github.com/woorimjung/rvcrq/edit/main/BICforRVC.m)
  : Code to calculate the BIC of the proposed method.
 
 - [MVC.m](https://github.com/woorimjung/rvcrq/edit/main/MVC.m)
- : 
+ : Code for estimating varying coefficients using the KNN method for multiple responses.
 
 - [BICforKNN.m](https://github.com/woorimjung/rvcrq/edit/main/BICforKNN.m)
  : Code to calculate the BIC of the KNN method.
 
 - [supplementary_code](https://github.com/woorimjung/rvcrq/edit/main/supplementary_code)
- :
+ : Folder containing all the source files and functions associated with KNN fused Lasso
 
 ## Note
 
