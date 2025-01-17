@@ -17,7 +17,7 @@ RVCRQ applies regional quantile regression to the reduced VC model for multiple 
  : Code to calculate the BIC of the proposed method.
 
 - [MVC.m](https://github.com/woorimjung/rvcrq/edit/main/MVC.m)
- : Code for estimating varying coefficients using the KNN method for multiple responses.
+ : Code for estimating VC for multiple responses by applying the KNN method to each response separately.
 
 - [BICforKNN.m](https://github.com/woorimjung/rvcrq/edit/main/BICforKNN.m)
  : Code to calculate the BIC of the KNN method.
@@ -27,6 +27,8 @@ RVCRQ applies regional quantile regression to the reduced VC model for multiple 
 
 ## Note
 Due to the non-convex nature of the optimization objective, we utilized [VC_qt_knn_admm.m](https://github.com/woorimjung/rvcrq/edit/main/supplementary_code/VC_qt_knn_admm.m), which performs VC regional quantile regression via K-nearest neighbors fused Lasso for single response data, to obtain a suitable initial matrix for our approach. For more details, visit https://github.com/younghhk/software/tree/master/MATLAB.
+
+[knnfl.m](https://github.com/woorimjung/rvcrq/edit/main/supplementary_code/knnfl.m) is a code for the K-NN fused Lasso algorithm, which is implemented as described by Steven Siwei Ye and Oscar Hernan Madrid Padilla in their paper 'Non-parametric quantile regression via the K-NN fused Lasso,' Journal of Machine Learning Research, Vol. 22, No. 111, 1-38, 2021. The algorithm relies on the use of nearestneighbour.m by Richard Brown. For more details, see [https://www.mathworks.com/matlabcentral/fileexchange/12574-nearestneighbour-m].
 
 We employ the parametric max-flow algorithm presented in the paper "On Total Variation Minimization and Surface Evolution Using Parametric Maximum Flows" by Antonin Chambolle and Jérôme Darbon (https://link.springer.com/article/10.1007/s11263-009-0238-9).
 
