@@ -28,6 +28,9 @@ RVCRQ applies regional quantile regression to the reduced VC model for multiple 
 ## Note
 Due to the non-convex nature of the optimization objective, we utilized [VC_qt_knn_admm.m](https://github.com/woorimjung/rvcrq/edit/main/supplementary_code/VC_qt_knn_admm.m), which performs VC regional quantile regression via K-nearest neighbors fused Lasso for single response data, to obtain a suitable initial matrix for our approach. For more details, visit [https://github.com/younghhk/software/tree/master/MATLAB].
 
+We employ the parametric max-flow algorithm presented in the paper "On Total Variation Minimization and Surface Evolution Using Parametric Maximum Flows" by Antonin Chambolle and Jérôme Darbon ([https://link.springer.com/article/10.1007/s11263-009-0238-9]).
+
+
 ## Authors
 [**Woorim Jung**](https://www.linkedin.com/in/우림-정-202875330)
 
