@@ -26,7 +26,7 @@ RVCRQ applies regional quantile regression to the reduced VC model for multiple 
  : Folder containing all the source files and functions associated with KNN fused Lasso
 
 ## Note
-
+Due to the non-convex nature of the optimization objective, we utilized [VC_qt_knn_admm.m](https://github.com/woorimjung/rvcrq/edit/main/supplementary_code/VC_qt_knn_admm.m), which performs VC regional quantile regression via K-nearest neighbors fused Lasso for single response data, to obtain a suitable initial matrix for our approach. For more details, visit [https://github.com/younghhk/software/tree/master/MATLAB].
 
 ## Authors
 [**Woorim Jung**](https://www.linkedin.com/in/우림-정-202875330)
