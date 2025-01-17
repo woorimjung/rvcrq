@@ -1,7 +1,7 @@
 # Reduced varying coefficients of regional quantile for multiple responses (2025+)
 
 ## Overview
-Our 
+RVCRQ applies regional quantile regression to the reduced VC model for multiple responses, leveraging K-nearest neighbors fused Lasso to capture underlying clustered patterns effectively. By representing VC with a few principal component functions and their coefficients, the reduced structure of the model contributes to the improved effectiveness of the proposed method. A key advantage of this approach is its ability to provide insights into the varying relationships between multiple outcomes and risk factors across time and quantile levels. To facilitate this, we developed an ADMM algorithm to estimate the principal component functions and their coefficients.
 
 ## Main functions
 - [demo_simulation.m](https://github.com/woorimjung/rvcrq/edit/main/demo_simulation.m)
@@ -26,6 +26,7 @@ Our
  : Folder containing all the source files and functions associated with KNN fused Lasso
 
 ## Note
+
 
 ## Authors
 [**Woorim Jung**](https://www.linkedin.com/in/우림-정-202875330)
