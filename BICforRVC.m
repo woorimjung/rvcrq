@@ -1,7 +1,7 @@
 function [bicvalue] = BICforRVC(X,Quantile,Y,D,f)
 
 n = size(Y,1); q = size(Y,2); p = size(X,2)-1; 
-K=5; %K = (p+1)*q;
+K= size(f,2);
 beta_bic = f*D';
     parfor i=1:n
         Xi = X(i,:)';
