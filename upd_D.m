@@ -34,19 +34,21 @@ n=size(X,1); p=size(X,2)-1; q=size(Y,2); %K =(p+1)*q;
         D = U(:,set)*S*V';
 
         % Update D_tilde
-        XX = sparse(K*(p+1)*q,K*(p+1)*q);
         Iq = speye(q);
+        UUT = zeros(K*(p+1), K*(p+1));
+        small_XYUZ = zeros(K*q*(p+1),1);
         parfor i=1:n
             fi = f(i,:); Xi = X(i,:); Yi = Y(i,:); U_tilde_i = U_tilde(i,:); Zi = Z(i,:);
             fi_Xi = kron(fi,Xi);
-            X_tilde_i = kron(fi_Xi,Iq)
-            XXi = (X_tilde_i'*X_tilde_i)  
-            XX = XX + XXi
-            XYUZ(:,i) = (X_tilde_i')*(Yi-U_tilde_i/eta_tilde-Zi)'
+            UUT = UUT + fi_Xi'*fi_Xi;
+            v_i = (Yi-U_tilde_i/eta_tilde-Zi)';
+            u_i = v_i*fi_Xi;
+            small_XYUZ = small_XYUZ + u_i(:);
         end
-        sum_XYUZ = sum(XYUZ,2); 
-        inv_mat = speye(K*(p+1)*q) + XX; 
-        D_tilde(:) = inv(inv_mat)*(D(:) - W(:)/eta_tilde + sum_XYUZ);
+        A_small = eye(K*(p+1)) + UUT;           
+        rhs = D(:) - W(:)/eta_tilde + small_XYUZ;
+        D_tilde(:) = kron(A_small \ eye(K*(p+1)), Iq) * rhs;
+
 
         % Update Z
         beta_D_tilde = f*D_tilde';

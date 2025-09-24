@@ -50,12 +50,18 @@ while error > tolerance & itr <= Niter
     F = sum(A.*qt,"all")/n;
     parfor i=1:n
     Xi = X(i,:); 
-    Vi = kron(Xi,Iq)*D; 
+    %Vi = kron(Xi,Iq)*D; 
     grad_a_i = zeros(1,K); ai = a(i,:); gi = g(i,:); ui = u(i,:);
     qt_i = qt(i,:);
         for k=1:K
-        Vik = Vi(:,k);             
-        grad_a_i(k) = -(1/sqrt(n))*(qt_i*Vik) + sqrt(n)*eta*(ai(k).*sqrt(n) - gi(k) - ui(k)/eta)
+        %Vik = Vi(:,k);
+        Vik = zeros(1,q);
+        Dk = D(:,k);
+        for l = 1:q
+            Dk_vec = Dk(l:q:end);   
+            Vik(l) = Dk_vec' * Xi';
+        end
+        grad_a_i(k) = -(1/sqrt(n))*(qt_i*Vik') + sqrt(n)*eta*(ai(k).*sqrt(n) - gi(k) - ui(k)/eta)
         end
     grad_a(i,:) = grad_a_i;
     end
