@@ -1,5 +1,5 @@
 function [D,f] = RVC(X,Quantile,T,Y,theta,lambda1,lambda2,K)
-Neighbour=5;tolerance=0.001;Niter=500;
+Neighbour=5;tolerance=0.001;Niter=100;
 
 n=size(X,1); p=size(X,2)-1; q=size(Y,2); %K = (p+1)*q; 
 %K=5;
@@ -140,3 +140,4 @@ while error > tolerance & itr <= Niter
 end
 
 end
+
