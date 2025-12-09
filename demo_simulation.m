@@ -71,7 +71,6 @@ f=f_set{minBIC};
 %% Reconstructing Results
 re = 1:p*q;
 reconst = reshape(re,q,p)';
-reconst(:)
 Result = f*D';
 Result = Result(:,reconst(:));
 
@@ -89,3 +88,4 @@ end
 %%
 
 exportgraphics(gcf, 'fig_demo_simul.jpg', 'Resolution', 300);
+
