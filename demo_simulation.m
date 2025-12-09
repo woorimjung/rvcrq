@@ -3,7 +3,7 @@ lambdaset1 = [0.5, 0.7, 0.9, 1.1, 1.3, 1.5, 1.7, 1.9];
 lambdaset2 = [0.5,1];
 [l1, l2] = ndgrid(lambdaset1, lambdaset2);
 combinations = [l1(:), l2(:)];
-n= 2000; q=5; p=5;
+n= 2000; q=5; p=6;
 T = rand(1,n);
 Quantile = rand(1,n);
 Quantile = 0.9*Quantile + 0.05; 
@@ -77,8 +77,8 @@ Result = Result(:,reconst(:));
 
 %% Visualizing Results 
 color_limits=[];
-for ii = 1:25
-subplot(5,5,ii)
+for ii = 1:30
+subplot(5,6,ii)
 scatter(T,Quantile, 14, Result(:,ii)) 
 ttt=xlabel('T'); ttt.FontSize=6;
 ylabel('\tau')
@@ -87,4 +87,5 @@ uuu=colorbar;
 color_limits=[color_limits;uuu.Limits]; uuu.TickLength=0.05;
 end
 %%
+
 exportgraphics(gcf, 'fig_demo_simul.jpg', 'Resolution', 300);
