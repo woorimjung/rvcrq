@@ -20,7 +20,7 @@ n=size(X,1); p=size(X,2)-1; q=size(Y,2); %K =(p+1)*q;
 
     itrD = 0;
     errorD = 100;
-    while errorD > 0.01 & itrD <= 300
+    while errorD > 0.01 & itrD <= 500
         itrD = itrD+1;
         D_old = D;
 
@@ -79,3 +79,4 @@ n=size(X,1); p=size(X,2)-1; q=size(Y,2); %K =(p+1)*q;
     end
 
 end
+
